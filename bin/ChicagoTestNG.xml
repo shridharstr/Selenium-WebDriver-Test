@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+ <!-- <test name="Test">
+ <parameter name="param1" value="Deadpool"/>
+    <parameter name="param2" value="Brad Pitt" />
+    <classes>
+      <class name="ChicagoTribuneFramework.POMTest"/>
+    </classes>
+  </test> -->   
+  <!-- 
+  <test name="Test2">
+  <parameter name="param1" value="Oscars 2016"/>
+    <parameter name="param2" value="Chicago Cubs" />
+    <classes>
+      <class name="ChicagoTribuneFramework.POMTest"/>
+    </classes>
+  </test> -->
+  <test name="FireFox-Test">
+  <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="44.0.2" />
+    <classes>
+      <class name="ChicagoTribuneFramework.POMTest"/>
+    </classes>
+  </test>
+   <test name="IE-Test">
+  <parameter name="browser" value="internet explorer"/>
+    <parameter name="version" value="11.0.9600.18124" />
+    <classes>
+      <class name="ChicagoTribuneFramework.POMTest"/>
+    </classes>
+  </test>
+  <test name="Chrome-Test">
+  <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="48.0.2564.116 m" />
+    <classes>
+      <class name="ChicagoTribuneFramework.POMTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

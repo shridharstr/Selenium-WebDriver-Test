@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  <groups>
+  	<include name ="login"/>
+  	<exclude name ="forgotPwd"/>
+  </groups>
+  
+  
+    <classes>
+      <class name="YahooTestFramework.POMClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
