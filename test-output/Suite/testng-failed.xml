@@ -3,13 +3,15 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="WaitsandTimeouts.NewTest">
+      <class name="ToolsQAProject.MainTestClass">
         <methods>
-          <include name="Test"/>
-          <include name="beforeTest"/>
+          <include name="TestStarter"/>
+          <include name="beforeMethod"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- WaitsandTimeouts.NewTest -->
+      </class> <!-- ToolsQAProject.MainTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

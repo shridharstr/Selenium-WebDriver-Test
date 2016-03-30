@@ -36,8 +36,9 @@ public class NewTest
 	  wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("content_items")));
 	  driver.findElement(By.className("content_items")).click();
 	  driver.findElement(By.className("indexSearch")).sendKeys("HTML Story");
-	  driver.findElement(By.cssSelector("input.graphicButton.inline")).click();
-	  
+	  WebElement ele = driver.findElement(By.tagName("input"));
+	  ele.getAttribute("value");
+	  ele.click();
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.findElement(By.xpath("//a[@href='/content_items/74234182/edit']")).click();
 	  

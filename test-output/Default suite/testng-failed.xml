@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ChicagoTribuneFramework.POMTest">
+      <class name="ToolsQAProject.MainTestClass">
         <methods>
-          <include name="SearchResults"/>
+          <include name="TestStarter"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- ChicagoTribuneFramework.POMTest -->
+      </class> <!-- ToolsQAProject.MainTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
