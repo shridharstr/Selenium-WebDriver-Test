@@ -9,20 +9,15 @@ import org.openqa.selenium.interactions.Actions;
 import ToolsQAProject.FunctionalUtilities;
 
 
-public class AccessoriesPage
+public class AccessoriesPage extends PageObjectClass
 {
-	public WebDriver driver = null;
-	 FunctionalUtilities util;
+	public WebDriver driver;
+	public FunctionalUtilities util;
 	 	
-	
-	public AccessoriesPage()
-	{
-		
-	}
 	
 	public AccessoriesPage(WebDriver driver) 
 	{
-          this.driver = driver;
+		super(driver);
 	}
 
 	public void TestCaseOne(WebDriver driver) throws InterruptedException
@@ -32,16 +27,27 @@ public class AccessoriesPage
 		WebElement accessory = driver.findElement(By.xpath("//a[contains(@href,'accessories')]"));
 		action.moveToElement(menu).moveToElement(accessory).build().perform();
 		accessory.click();
-		
-		util = new FunctionalUtilities(driver);
-		util.AddToCart(driver);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				
-//		util.ClickOnCheckOut(driver);
-		
-		
+    	AddToCart(driver);
+    	
+    	util = new FunctionalUtilities(driver);
+    	util.ClickOnCheckOut(driver);
+    	
+    	System.out.println("\nProduct Price and Total Price before update button is clicked:");
+    	util.convertStringtoInt();
+    	Thread.sleep(2000);
+    	util.performCheckout(driver);
+    	
+    	System.out.println("\nProduct Price and Total Price after update button is clicked");
+    	util.convertStringtoInt();
+    	
+    	util.removeProduct(driver);
 	}
-	
-		
+
+	public void GoToHomePage()
+	{
+		WebElement HomePage = driver.findElement(By.linkText("Home"));
+		HomePage.click();
+	}
+			
 	
 }

@@ -21,7 +21,7 @@ import ToolsQAProject.AccessoriesPage;
 public class MainTestClass 
 { FunctionalUtilities util;
 	public static Scanner read;
-	private static AccessoriesPage showAccessory;
+	private static AccessoriesPage AccessoryObj;
 	private static iPhonesPage iPhoneObj;
 	public  WebDriver driver;
 	public int i;
@@ -33,8 +33,8 @@ public class MainTestClass
 	System.out.println("\nSelect the browser to run the test case -");
 	String browser = read.next();
 	BrowserHandler openBrowser = new BrowserHandler();
-	showAccessory = new AccessoriesPage();
-	iPhoneObj = new iPhonesPage();
+	AccessoryObj = new AccessoriesPage(driver);
+	iPhoneObj = new iPhonesPage(driver);
 	
 	driver = openBrowser.getWebDriver(browser);
 	driver.get("http://store.demoqa.com/");
@@ -43,27 +43,21 @@ public class MainTestClass
 	driver.manage().window().maximize();
 	
 	if(i == 1)
-		showAccessory.TestCaseOne(driver);
+		AccessoryObj.TestCaseOne(driver);
     else
 	   iPhoneObj.TestCaseTwo(driver);
-	util=new FunctionalUtilities(driver);
-	util.performCheckout();
   }
   
-  /*public Iterator getURLFromPropertyFile() throws FileNotFoundException, IOException
+ /* public Iterator getURLFromPropertyFile() throws FileNotFoundException, IOException
   {
        Properties prop;
        File file;
-       Collection collection;
-       Iterator url;      
-
+            
        file = new File("C:\\selenium_drivers\\FileInput.properties");
        FileInputStream fis = new FileInputStream(file);
        prop = new Properties();
        prop.load(fis);
-       collection = prop.values();
-       url = collection.iterator();
-         
+       
      return url;
   }
  */
