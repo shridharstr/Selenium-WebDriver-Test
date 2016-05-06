@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="ToolsQAProject.MainTestClass">
+      <class name="P2P_Content_Services.P2PMainClass">
         <methods>
-          <include name="TestStarter"/>
-          <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="TestCaseExecution"/>
         </methods>
-      </class> <!-- ToolsQAProject.MainTestClass -->
+      </class> <!-- P2P_Content_Services.P2PMainClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

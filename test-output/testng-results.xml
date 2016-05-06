@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63232" started-at="2016-03-30T07:05:22Z" finished-at="2016-03-30T07:06:26Z">
+  <suite name="Suite" duration-ms="50760" started-at="2016-04-21T08:36:24Z" finished-at="2016-04-21T08:37:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63232" started-at="2016-03-30T07:05:22Z" finished-at="2016-03-30T07:06:26Z">
+    <test name="Test" duration-ms="50760" started-at="2016-04-21T08:36:24Z" finished-at="2016-04-21T08:37:15Z">
       <class name="ToolsQAProject.MainTestClass">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ToolsQAProject.MainTestClass@39ba5a14]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-03-30T12:35:22Z" finished-at="2016-03-30T12:35:22Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ToolsQAProject.MainTestClass@7f63425a]" name="beforeTest" is-config="true" duration-ms="7" started-at="2016-04-21T14:06:24Z" finished-at="2016-04-21T14:06:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ToolsQAProject.MainTestClass@39ba5a14]" name="beforeMethod" is-config="true" duration-ms="4525" started-at="2016-03-30T12:35:22Z" finished-at="2016-03-30T12:35:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ToolsQAProject.MainTestClass@7f63425a]" name="beforeMethod" is-config="true" duration-ms="2864" started-at="2016-04-21T14:06:24Z" finished-at="2016-04-21T14:06:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TestStarter()[pri:0, instance:ToolsQAProject.MainTestClass@39ba5a14]" name="TestStarter" duration-ms="57974" started-at="2016-03-30T12:35:27Z" finished-at="2016-03-30T12:36:25Z">
+        <test-method status="PASS" signature="TestStarter()[pri:0, instance:ToolsQAProject.MainTestClass@7f63425a]" name="TestStarter" duration-ms="46738" started-at="2016-04-21T14:06:27Z" finished-at="2016-04-21T14:07:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestStarter -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ToolsQAProject.MainTestClass@39ba5a14]" name="afterMethod" is-config="true" duration-ms="702" started-at="2016-03-30T12:36:25Z" finished-at="2016-03-30T12:36:26Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ToolsQAProject.MainTestClass@7f63425a]" name="afterMethod" is-config="true" duration-ms="1129" started-at="2016-04-21T14:07:14Z" finished-at="2016-04-21T14:07:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:ToolsQAProject.MainTestClass@39ba5a14]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-03-30T12:36:26Z" finished-at="2016-03-30T12:36:26Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ToolsQAProject.MainTestClass@7f63425a]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-21T14:07:15Z" finished-at="2016-04-21T14:07:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- ToolsQAProject.MainTestClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
